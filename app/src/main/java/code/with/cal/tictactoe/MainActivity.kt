@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity()
     private var currentTurn = Turn.PLAYER2
 
     private var player2Sore = 0
-    private var payer1Score = 0
+    private var player1Score = 0
 
     private var boardList = mutableListOf<Button>()
 
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity()
 
         if(checkForVictory(PLAYER1))
         {
-            payer1Score++
+            player1Score++
             result("Player 1: O Wins!")
         }
         else if(checkForVictory(PLAYER2))
@@ -107,11 +107,12 @@ class MainActivity : AppCompatActivity()
         return false
     }
 
+    //Match the button with the symbol X or 0
     private fun match(button: Button, symbol : String): Boolean = button.text == symbol
 
     private fun result(title: String)
     {
-        val message = "\nPlayer    Score \n------------------------\nPlayer 1   $payer1Score\n\nPlayer 2   $player2Sore"
+        val message = "\nPlayer    Score \n------------------------\nPlayer 1   $player1Score\n\nPlayer 2   $player2Sore"
         AlertDialog.Builder(this)
             .setTitle(title)
             .setMessage(message)
@@ -129,7 +130,6 @@ class MainActivity : AppCompatActivity()
         {
             button.text = ""
         }
-
         if(firstTurn == Turn.PLAYER1)
             firstTurn = Turn.PLAYER2
         else if(firstTurn == Turn.PLAYER2)
@@ -149,6 +149,7 @@ class MainActivity : AppCompatActivity()
         return true
     }
 
+    //Check current turn(X or 0) and add to board
     private fun addToBoard(button: Button)
     {
         if(button.text != "")
@@ -167,6 +168,7 @@ class MainActivity : AppCompatActivity()
         setTurnLabel()
     }
 
+    //Show players turn
     private fun setTurnLabel()
     {
         var turnText = ""
@@ -178,6 +180,7 @@ class MainActivity : AppCompatActivity()
         binding.turnTV.text = turnText
     }
 
+    //companion object - Define static variable and methods
     companion object
     {
         const val PLAYER1 = "O"
