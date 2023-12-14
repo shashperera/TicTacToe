@@ -23,27 +23,27 @@
                 android:onClick="buClick"
                 android:text=""
                 android:textSize="20pt"
-                app:backgroundTint="#FCF6F5FF" />
+                app:backgroundTint="@color/purple_200" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="50pt"
                 android:layout_height="50pt"
-                app:backgroundTint="#FCF6F5FF"
                 android:layout_margin="5dp"
                 android:onClick="buClick"
+                android:text=""
                 android:textSize="20pt"
-                android:text="" />
+                app:backgroundTint="@color/purple_200" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="50pt"
                 android:layout_height="50pt"
-                app:backgroundTint="#FCF6F5FF"
                 android:layout_margin="5dp"
-                android:textSize="20pt"
                 android:onClick="buClick"
-                android:text="" />
+                android:text=""
+                android:textSize="20pt"
+                app:backgroundTint="@color/purple_200" />
         </TableRow>
 
         <TableRow
@@ -55,31 +55,31 @@
                 android:id="@+id/button4"
                 android:layout_width="50pt"
                 android:layout_height="50pt"
-                app:backgroundTint="#FCF6F5FF"
                 android:layout_margin="5dp"
                 android:onClick="buClick"
+                android:text=""
                 android:textSize="20pt"
-                android:text="" />
+                app:backgroundTint="@color/purple_200" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="50pt"
                 android:layout_height="50pt"
-                app:backgroundTint="#FCF6F5FF"
                 android:layout_margin="5dp"
                 android:onClick="buClick"
+                android:text=""
                 android:textSize="20pt"
-                android:text="" />
+                app:backgroundTint="@color/purple_200" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="50pt"
                 android:layout_height="50pt"
-                app:backgroundTint="#FCF6F5FF"
                 android:layout_margin="5dp"
                 android:onClick="buClick"
+                android:text=""
                 android:textSize="20pt"
-                android:text="" />
+                app:backgroundTint="@color/purple_200" />
         </TableRow>
 
         <TableRow
@@ -91,31 +91,31 @@
                 android:id="@+id/button7"
                 android:layout_width="50pt"
                 android:layout_height="50pt"
-                app:backgroundTint="#FCF6F5FF"
                 android:layout_margin="5dp"
                 android:onClick="buClick"
+                android:text=""
                 android:textSize="20pt"
-                android:text="" />
+                app:backgroundTint="@color/purple_200" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="50pt"
                 android:layout_height="50pt"
-                app:backgroundTint="#FCF6F5FF"
                 android:layout_margin="5dp"
                 android:onClick="buClick"
+                android:text=""
                 android:textSize="20pt"
-                android:text="" />
+                app:backgroundTint="@color/purple_200" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="50pt"
                 android:layout_height="50pt"
-                app:backgroundTint="#FCF6F5FF"
                 android:layout_margin="5dp"
                 android:onClick="buClick"
+                android:text=""
                 android:textSize="20pt"
-                android:text="" />
+                app:backgroundTint="@color/purple_200" />
         </TableRow>
     </TableLayout>
     <LinearLayout
